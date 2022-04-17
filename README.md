@@ -2,7 +2,7 @@
   Neural Data Completion for Relational Databases  
 
 # Go to your google drive and replicate this repository
-!git clone https://github.com/DataManagementLab/restore.git  
+!git clone git@github.com:SushilSurana/sdeproject.git 
 # Make destination forled if you wish to use persistent storage and move the code to desired folder
   !mkdir 'gdrive/MyDrive/SDE/'  
   !mv restore 'gdrive/MyDrive/SDE/'  
