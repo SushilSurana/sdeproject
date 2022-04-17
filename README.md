@@ -45,4 +45,4 @@ Now move the dataset to desired folders and make sure to use the path properly i
 # Generate commands for experiments
 !python3 exp_commands.py  
 
-# For generation of graphs follow thw colab colde available at https://colab.research.google.com/drive/1bwKTBs7SjeLWukKBL2559ynaLKVg6dW3?usp=sharing 
+# For generation of graphs follow the colab colde available at https://colab.research.google.com/drive/1bwKTBs7SjeLWukKBL2559ynaLKVg6dW3?usp=sharing 
