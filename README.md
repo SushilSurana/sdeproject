@@ -29,7 +29,7 @@
 !pip install spflow  
 !pip install nmslib  
 # go to the repository created 
-%cd 'gdrive/MyDrive/SDE/restore'  
+%cd 'gdrive/MyDrive/SDE/restore'  # path to replicated restore folder
 
 # Download the datasets
 !wget https://public.opendatasoft.com/explore/dataset/airbnb-listings/download/?format=csv&timezone=Europe/Berlin&lang=en&use_labels_for_header=true&csv_separator=%3B  
@@ -37,10 +37,11 @@
 Now move the dataset to desired folders and make sure to use the path properly in all executions  
 
 # preprocess the dataset normalize and generate HDF files
-!python3 completion.py --preprocess --dataset airbnb --raw_data_directory ../research-data/incomplete-db/airbnb/all-raw --normalized_data_directory ../research-data/incomplete-db/airbnb/preprocessed  
-!python3 completion.py --preprocess --dataset imdb --raw_data_directory ../research-data/incomplete-db/imdb/all-raw --normalized_data_directory ../research-data/incomplete-db/imdb/preprocessed  
-!python3 completion.py --generate_hdf --dataset airbnb --normalized_data_directory ../research-data/incomplete-db/airbnb/preprocessed --hdf_data_directory ../research-data/incomplete-db/airbnb/hdf_preprocessed  
-!python3 completion.py --generate_hdf --dataset imdb --normalized_data_directory ../research-data/incomplete-db/imdb/preprocessed --hdf_data_directory ../research-data/incomplete-db/imdb/hdf_preprocessed  
+!python3 completion.py --preprocess --dataset airbnb --raw_data_directory <row path> --normalized_data_directory <Preprocessed path>
+!python3 completion.py --preprocess --dataset imdb --raw_data_directory <row path> --normalized_data_directory <Preprocessed path>
+  
+!python3 completion.py --generate_hdf --dataset airbnb --normalized_data_directory <Preprocessed path> --hdf_data_directory <HDF Preprocessed path>
+!python3 completion.py --generate_hdf --dataset imdb --normalized_data_directory <Preprocessed path> --hdf_data_directory <HDF Preprocessed path>
 
 # Generate commands for experiments
 !python3 exp_commands.py  
