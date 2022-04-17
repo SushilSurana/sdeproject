@@ -1,6 +1,6 @@
 # sdeproject
   Neural Data Completion for Relational Databases  
-[Note]This is a replication of official repository of ReStore https://github.com/DataManagementLab/restore?msclkid=0979471ebdac11ec8c281947118c33d5   
+
 # Go to your google drive and replicate this repository
 !git clone https://github.com/DataManagementLab/restore.git  
 # Make destination forled if you wish to use persistent storage and move the code to desired folder
@@ -46,3 +46,5 @@ Now move the dataset to desired folders and make sure to use the path properly i
 !python3 exp_commands.py  
 
 # For generation of graphs follow the colab colde available at https://colab.research.google.com/drive/1bwKTBs7SjeLWukKBL2559ynaLKVg6dW3?usp=sharing 
+
+# This is a replication of official repository of ReStore https://github.com/DataManagementLab/restore?msclkid=0979471ebdac11ec8c281947118c33d5   
