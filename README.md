@@ -6,7 +6,7 @@ This is a replication of official repository of ReStore https://github.com/DataM
 !git clone https://github.com/DataManagementLab/restore.git
 
 # Make destination forled if you wish to use persistent storage and move the code to desired folder
-!mkdir 'gdrive/MyDrive/SDE/'
+!mkdir 'gdrive/MyDrive/SDE/' \n
 !mv restore 'gdrive/MyDrive/SDE/'
 !ls 'gdrive/MyDrive/SDE/' # Check
 
